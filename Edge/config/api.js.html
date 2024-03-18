@@ -1,0 +1,1054 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for Edge/config/api.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">Edge/config</a> api.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">9.43% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>15/159</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">22.22% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>4/18</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">2.14% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>3/140</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">9.49% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>15/158</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input oninput="onInput()" type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a>
+<a name='L116'></a><a href='#L116'>116</a>
+<a name='L117'></a><a href='#L117'>117</a>
+<a name='L118'></a><a href='#L118'>118</a>
+<a name='L119'></a><a href='#L119'>119</a>
+<a name='L120'></a><a href='#L120'>120</a>
+<a name='L121'></a><a href='#L121'>121</a>
+<a name='L122'></a><a href='#L122'>122</a>
+<a name='L123'></a><a href='#L123'>123</a>
+<a name='L124'></a><a href='#L124'>124</a>
+<a name='L125'></a><a href='#L125'>125</a>
+<a name='L126'></a><a href='#L126'>126</a>
+<a name='L127'></a><a href='#L127'>127</a>
+<a name='L128'></a><a href='#L128'>128</a>
+<a name='L129'></a><a href='#L129'>129</a>
+<a name='L130'></a><a href='#L130'>130</a>
+<a name='L131'></a><a href='#L131'>131</a>
+<a name='L132'></a><a href='#L132'>132</a>
+<a name='L133'></a><a href='#L133'>133</a>
+<a name='L134'></a><a href='#L134'>134</a>
+<a name='L135'></a><a href='#L135'>135</a>
+<a name='L136'></a><a href='#L136'>136</a>
+<a name='L137'></a><a href='#L137'>137</a>
+<a name='L138'></a><a href='#L138'>138</a>
+<a name='L139'></a><a href='#L139'>139</a>
+<a name='L140'></a><a href='#L140'>140</a>
+<a name='L141'></a><a href='#L141'>141</a>
+<a name='L142'></a><a href='#L142'>142</a>
+<a name='L143'></a><a href='#L143'>143</a>
+<a name='L144'></a><a href='#L144'>144</a>
+<a name='L145'></a><a href='#L145'>145</a>
+<a name='L146'></a><a href='#L146'>146</a>
+<a name='L147'></a><a href='#L147'>147</a>
+<a name='L148'></a><a href='#L148'>148</a>
+<a name='L149'></a><a href='#L149'>149</a>
+<a name='L150'></a><a href='#L150'>150</a>
+<a name='L151'></a><a href='#L151'>151</a>
+<a name='L152'></a><a href='#L152'>152</a>
+<a name='L153'></a><a href='#L153'>153</a>
+<a name='L154'></a><a href='#L154'>154</a>
+<a name='L155'></a><a href='#L155'>155</a>
+<a name='L156'></a><a href='#L156'>156</a>
+<a name='L157'></a><a href='#L157'>157</a>
+<a name='L158'></a><a href='#L158'>158</a>
+<a name='L159'></a><a href='#L159'>159</a>
+<a name='L160'></a><a href='#L160'>160</a>
+<a name='L161'></a><a href='#L161'>161</a>
+<a name='L162'></a><a href='#L162'>162</a>
+<a name='L163'></a><a href='#L163'>163</a>
+<a name='L164'></a><a href='#L164'>164</a>
+<a name='L165'></a><a href='#L165'>165</a>
+<a name='L166'></a><a href='#L166'>166</a>
+<a name='L167'></a><a href='#L167'>167</a>
+<a name='L168'></a><a href='#L168'>168</a>
+<a name='L169'></a><a href='#L169'>169</a>
+<a name='L170'></a><a href='#L170'>170</a>
+<a name='L171'></a><a href='#L171'>171</a>
+<a name='L172'></a><a href='#L172'>172</a>
+<a name='L173'></a><a href='#L173'>173</a>
+<a name='L174'></a><a href='#L174'>174</a>
+<a name='L175'></a><a href='#L175'>175</a>
+<a name='L176'></a><a href='#L176'>176</a>
+<a name='L177'></a><a href='#L177'>177</a>
+<a name='L178'></a><a href='#L178'>178</a>
+<a name='L179'></a><a href='#L179'>179</a>
+<a name='L180'></a><a href='#L180'>180</a>
+<a name='L181'></a><a href='#L181'>181</a>
+<a name='L182'></a><a href='#L182'>182</a>
+<a name='L183'></a><a href='#L183'>183</a>
+<a name='L184'></a><a href='#L184'>184</a>
+<a name='L185'></a><a href='#L185'>185</a>
+<a name='L186'></a><a href='#L186'>186</a>
+<a name='L187'></a><a href='#L187'>187</a>
+<a name='L188'></a><a href='#L188'>188</a>
+<a name='L189'></a><a href='#L189'>189</a>
+<a name='L190'></a><a href='#L190'>190</a>
+<a name='L191'></a><a href='#L191'>191</a>
+<a name='L192'></a><a href='#L192'>192</a>
+<a name='L193'></a><a href='#L193'>193</a>
+<a name='L194'></a><a href='#L194'>194</a>
+<a name='L195'></a><a href='#L195'>195</a>
+<a name='L196'></a><a href='#L196'>196</a>
+<a name='L197'></a><a href='#L197'>197</a>
+<a name='L198'></a><a href='#L198'>198</a>
+<a name='L199'></a><a href='#L199'>199</a>
+<a name='L200'></a><a href='#L200'>200</a>
+<a name='L201'></a><a href='#L201'>201</a>
+<a name='L202'></a><a href='#L202'>202</a>
+<a name='L203'></a><a href='#L203'>203</a>
+<a name='L204'></a><a href='#L204'>204</a>
+<a name='L205'></a><a href='#L205'>205</a>
+<a name='L206'></a><a href='#L206'>206</a>
+<a name='L207'></a><a href='#L207'>207</a>
+<a name='L208'></a><a href='#L208'>208</a>
+<a name='L209'></a><a href='#L209'>209</a>
+<a name='L210'></a><a href='#L210'>210</a>
+<a name='L211'></a><a href='#L211'>211</a>
+<a name='L212'></a><a href='#L212'>212</a>
+<a name='L213'></a><a href='#L213'>213</a>
+<a name='L214'></a><a href='#L214'>214</a>
+<a name='L215'></a><a href='#L215'>215</a>
+<a name='L216'></a><a href='#L216'>216</a>
+<a name='L217'></a><a href='#L217'>217</a>
+<a name='L218'></a><a href='#L218'>218</a>
+<a name='L219'></a><a href='#L219'>219</a>
+<a name='L220'></a><a href='#L220'>220</a>
+<a name='L221'></a><a href='#L221'>221</a>
+<a name='L222'></a><a href='#L222'>222</a>
+<a name='L223'></a><a href='#L223'>223</a>
+<a name='L224'></a><a href='#L224'>224</a>
+<a name='L225'></a><a href='#L225'>225</a>
+<a name='L226'></a><a href='#L226'>226</a>
+<a name='L227'></a><a href='#L227'>227</a>
+<a name='L228'></a><a href='#L228'>228</a>
+<a name='L229'></a><a href='#L229'>229</a>
+<a name='L230'></a><a href='#L230'>230</a>
+<a name='L231'></a><a href='#L231'>231</a>
+<a name='L232'></a><a href='#L232'>232</a>
+<a name='L233'></a><a href='#L233'>233</a>
+<a name='L234'></a><a href='#L234'>234</a>
+<a name='L235'></a><a href='#L235'>235</a>
+<a name='L236'></a><a href='#L236'>236</a>
+<a name='L237'></a><a href='#L237'>237</a>
+<a name='L238'></a><a href='#L238'>238</a>
+<a name='L239'></a><a href='#L239'>239</a>
+<a name='L240'></a><a href='#L240'>240</a>
+<a name='L241'></a><a href='#L241'>241</a>
+<a name='L242'></a><a href='#L242'>242</a>
+<a name='L243'></a><a href='#L243'>243</a>
+<a name='L244'></a><a href='#L244'>244</a>
+<a name='L245'></a><a href='#L245'>245</a>
+<a name='L246'></a><a href='#L246'>246</a>
+<a name='L247'></a><a href='#L247'>247</a>
+<a name='L248'></a><a href='#L248'>248</a>
+<a name='L249'></a><a href='#L249'>249</a>
+<a name='L250'></a><a href='#L250'>250</a>
+<a name='L251'></a><a href='#L251'>251</a>
+<a name='L252'></a><a href='#L252'>252</a>
+<a name='L253'></a><a href='#L253'>253</a>
+<a name='L254'></a><a href='#L254'>254</a>
+<a name='L255'></a><a href='#L255'>255</a>
+<a name='L256'></a><a href='#L256'>256</a>
+<a name='L257'></a><a href='#L257'>257</a>
+<a name='L258'></a><a href='#L258'>258</a>
+<a name='L259'></a><a href='#L259'>259</a>
+<a name='L260'></a><a href='#L260'>260</a>
+<a name='L261'></a><a href='#L261'>261</a>
+<a name='L262'></a><a href='#L262'>262</a>
+<a name='L263'></a><a href='#L263'>263</a>
+<a name='L264'></a><a href='#L264'>264</a>
+<a name='L265'></a><a href='#L265'>265</a>
+<a name='L266'></a><a href='#L266'>266</a>
+<a name='L267'></a><a href='#L267'>267</a>
+<a name='L268'></a><a href='#L268'>268</a>
+<a name='L269'></a><a href='#L269'>269</a>
+<a name='L270'></a><a href='#L270'>270</a>
+<a name='L271'></a><a href='#L271'>271</a>
+<a name='L272'></a><a href='#L272'>272</a>
+<a name='L273'></a><a href='#L273'>273</a>
+<a name='L274'></a><a href='#L274'>274</a>
+<a name='L275'></a><a href='#L275'>275</a>
+<a name='L276'></a><a href='#L276'>276</a>
+<a name='L277'></a><a href='#L277'>277</a>
+<a name='L278'></a><a href='#L278'>278</a>
+<a name='L279'></a><a href='#L279'>279</a>
+<a name='L280'></a><a href='#L280'>280</a>
+<a name='L281'></a><a href='#L281'>281</a>
+<a name='L282'></a><a href='#L282'>282</a>
+<a name='L283'></a><a href='#L283'>283</a>
+<a name='L284'></a><a href='#L284'>284</a>
+<a name='L285'></a><a href='#L285'>285</a>
+<a name='L286'></a><a href='#L286'>286</a>
+<a name='L287'></a><a href='#L287'>287</a>
+<a name='L288'></a><a href='#L288'>288</a>
+<a name='L289'></a><a href='#L289'>289</a>
+<a name='L290'></a><a href='#L290'>290</a>
+<a name='L291'></a><a href='#L291'>291</a>
+<a name='L292'></a><a href='#L292'>292</a>
+<a name='L293'></a><a href='#L293'>293</a>
+<a name='L294'></a><a href='#L294'>294</a>
+<a name='L295'></a><a href='#L295'>295</a>
+<a name='L296'></a><a href='#L296'>296</a>
+<a name='L297'></a><a href='#L297'>297</a>
+<a name='L298'></a><a href='#L298'>298</a>
+<a name='L299'></a><a href='#L299'>299</a>
+<a name='L300'></a><a href='#L300'>300</a>
+<a name='L301'></a><a href='#L301'>301</a>
+<a name='L302'></a><a href='#L302'>302</a>
+<a name='L303'></a><a href='#L303'>303</a>
+<a name='L304'></a><a href='#L304'>304</a>
+<a name='L305'></a><a href='#L305'>305</a>
+<a name='L306'></a><a href='#L306'>306</a>
+<a name='L307'></a><a href='#L307'>307</a>
+<a name='L308'></a><a href='#L308'>308</a>
+<a name='L309'></a><a href='#L309'>309</a>
+<a name='L310'></a><a href='#L310'>310</a>
+<a name='L311'></a><a href='#L311'>311</a>
+<a name='L312'></a><a href='#L312'>312</a>
+<a name='L313'></a><a href='#L313'>313</a>
+<a name='L314'></a><a href='#L314'>314</a>
+<a name='L315'></a><a href='#L315'>315</a>
+<a name='L316'></a><a href='#L316'>316</a>
+<a name='L317'></a><a href='#L317'>317</a>
+<a name='L318'></a><a href='#L318'>318</a>
+<a name='L319'></a><a href='#L319'>319</a>
+<a name='L320'></a><a href='#L320'>320</a>
+<a name='L321'></a><a href='#L321'>321</a>
+<a name='L322'></a><a href='#L322'>322</a>
+<a name='L323'></a><a href='#L323'>323</a>
+<a name='L324'></a><a href='#L324'>324</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">39x</span>
+<span class="cline-any cline-yes">39x</span>
+<span class="cline-any cline-yes">39x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">39x</span>
+<span class="cline-any cline-yes">39x</span>
+<span class="cline-any cline-yes">39x</span>
+<span class="cline-any cline-yes">39x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">39x</span>
+<span class="cline-any cline-yes">39x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">39x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">39x</span>
+<span class="cline-any cline-yes">39x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">39x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* eslint-disable max-len */
+import { Platform } from 'react-native'
+import deviceInfoModule from 'react-native-device-info'
+import { parameterMerger } from 'utils/CommonUtils'
+import { PocUtils } from 'modules/POC_Revamp_v2/utils/pocUtils'
+import { getRentPayService, SERVICE } from './serviceEndpoints'
+import { getAPIEndPoint as getEndPoint } from './helpers'
+&nbsp;
+const PLATFORM_KEY = 'platform'
+const SOURCE_NAME_KEY = 'source_name'
+const SOURCE_APP = 'USER_APP'
+&nbsp;
+const appendPlatformAndSource = (url, addPlatform = true, addSource = true) =&gt; {
+  const newUrl = new URL(url)
+  <span class="missing-if-branch" title="else path not taken" >E</span>if (addPlatform) {
+    newUrl.searchParams.append(PLATFORM_KEY, Platform.OS)
+  }
+  <span class="missing-if-branch" title="else path not taken" >E</span>if (addSource) {
+    newUrl.searchParams.append(SOURCE_NAME_KEY, SOURCE_APP)
+  }
+  return newUrl.toString()
+}
+&nbsp;
+const rentPayEndPt = getRentPayService(true)
+const getConfigApiUrl = <span class="fstat-no" title="function not covered" >gr</span>oupName =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/v1/config/by-group-name?groupName=${groupName}`)</span>
+&nbsp;
+const apis = {
+  signin: getEndPoint('login', 'signin', 'v2'),
+  signup: getEndPoint('login', 'signup-with-otp', 'v2'),
+  verifyphone: getEndPoint('login', 'phone-verify', 'v1'),
+  fetchUserDetails: getEndPoint('login', 'user-details', 'v1'),
+  logOut: getEndPoint('login', 'logout', 'v1'),
+  updateEmail: getEndPoint('login', 'edit-profile', 'v2'),
+  sendVerificationOTP: getEndPoint('login', 'send-verification-otp', 'v1'),
+  savePassword: getEndPoint('login', 'save-password', 'v1'),
+  editProfile: getEndPoint('login', 'edit-profile', 'v2'),
+  addProfile: getEndPoint('login', 'add-profile-to-loggedin-user', 'v2'),
+  fetchProfileQuestionss: getEndPoint('feedback', 'feedback_form/questions?feedback_form_slug=owner_data_profiling', 'v1'),
+  submitFeedback: getEndPoint('feedback', 'feedback/submit', 'v1'),
+  fetchFeedbackDetails: <span class="fstat-no" title="function not covered" >id</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint('feedback', `feedback/get_feedback_data?feedback_form_slug=owner_data_profiling&amp;task=owner_given_feedback&amp;profile_uuid=${id}`, 'v1'),</span>
+  sendOtp: getEndPoint('login', 'send-otp', 'v2'),
+  verifyOtp: getEndPoint('login', 'verify-otp', 'v2'),
+  checkValuePresentInSystem: getEndPoint('login', 'check-value-present-in-system', 'v5'),
+  socialLogin: getEndPoint('login', 'social-login', 'v1'),
+  fetchProfileDetails: getEndPoint('login', 'profile-details-public', 'v1'),
+  emailLeads: getEndPoint('leads', 'mail-leads-csv', 'v0'),
+  fetchLeads: getEndPoint('pahal', 'lead-listing', 'v2'),
+  renewPackage: getEndPoint('leads', 'partner-page-requests', 'v0'),
+  fetchLeadDetails: getEndPoint('pahal', 'lead-listing-details', 'v1'),
+  chatIncentiveEligibility: <span class="fstat-no" title="function not covered" >pr</span>ofileUuid =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint('leads', `chat-incentive-eligiblity?profile_uuid=${profileUuid}`, 'v2'),</span>
+  chatIncentiveLead: <span class="fstat-no" title="function not covered" >pr</span>ofileUuid =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint('leads', `chat-incentive-leads?profile_uuid=${profileUuid}`, 'v2'),</span>
+  getSmsContent: getEndPoint('leads', 'matching-properties/sms-content', 'v0'),
+  fetchLeadsFilters: getEndPoint('pahal', 'leads-filters', 'v1'),
+  fetchLeadsCounts: getEndPoint('pahal', 'seller-total-lead-count', 'v2'),
+  sellerListingLeadsCount: getEndPoint('pahal', 'seller-listing-lead-count', 'v2'),
+  getSuggestedLead: <span class="fstat-no" title="function not covered" >id</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint('leads', `get-suggested-leads?seller_uuid=${id}`, 'v0'),</span>
+  setSuggestedLeadInterest: <span class="fstat-no" title="function not covered" >(i</span>d, status) =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint('leads', `set-interest?id=${id}&amp;status=${status}`, 'v0'),</span>
+  getRegionsCityList: getEndPoint('regions', 'polygon/top/cities/list', 'v2'),
+  fetchListings: getEndPoint('casa', 'filter/filter-properties', 'v1'),
+  fetchListingsCommercial: getEndPoint('jasprr', 'commercial/seller/index/filter', 'v0', 'housing'),
+  fetchListingsDetailsCommercial: getEndPoint('jasprr', 'commercial', 'v0', 'housing'),
+  fetchCommercialListingsCounts: getEndPoint('jasprr', 'commercial/seller/index/count', 'v1', 'housing'),
+  fetchCommercialLocalities: getEndPoint('jasprr', 'commercial/seller/get-aggregations', 'v0'),
+  updateListingStatusBulk: getEndPoint('flats', 'flat/update-user-flat-status-bulk', 'v1'),
+  updateCommercialListingStatusBulk: getEndPoint('jasprr', 'commercial/delete-listing', 'v0'),
+  fetchPropertyDetails: getEndPoint('flats', 'flat', 'v1'),
+  fetchTitaniumHighlights: getEndPoint('flats', 'flat/higlights-list', 'v1'),
+  fetchReasonsForStatus: getEndPoint('flats', 'flat/get-reason-list-for-status', 'v1'),
+  updateTitaniumStatusBulk: getEndPoint('flats', 'flat/bulk-update', 'v1'),
+  fetchListingCount: getEndPoint('casa', 'flat/flats-type-count-from-es', 'v1'),
+  updatelistingStatus: getEndPoint('flats', 'flat/status-change', 'v1'),
+  flatCount: getEndPoint('flats', 'flat/flat-count', 'v1'),
+  getS3Credentials: getEndPoint('images', 'client_images/get_s3_credentials', 'v1'),
+  notifyBackend: getEndPoint('images', 'client_images/create_multiple_files_self_upload', 'v1'),
+  fetchPropertyImages: getEndPoint('images', 'client_images/feedback', 'v1'),
+  notificationLogin: getEndPoint('notification', 'login-device', 'v0'),
+  notificationLogout: getEndPoint('notification', 'logout-device', 'v0'),
+  publishEventsToHousing: getEndPoint('eventrouter', 'publish_event/housingseller', 'v0'),
+  newProjectListings: getEndPoint('search', 'buy/index/filter', 'v7'),
+  newProjectDetails: getEndPoint('newprojects', 'new-projects', 'v3'),
+  fetchNewProjectHookPdp: getEndPoint('newprojects', 'new-projects/cities/', 'v1'),
+  checkCertifiedBroker: getEndPoint('lookup', 'sapna/certified-client/listings'),
+  captureInterestCertifiedBroker: getEndPoint('lookup', 'sapna/client-interest/capture'),
+  fetchTimerDetails: getEndPoint('lookup', 'sapna/v1/urgency-discount'),
+  fetchOwnerPackagePrices: getEndPoint('lookup', 'sapna/v2/package-price/owner'),
+  fetchRewardsBrand: getEndPoint('rentpay', 'gambit/v1/offer-details'),
+  fetchStaticRewards: getEndPoint('rentpay', 'gambit/v2/offer-details'),
+  fetchRewards: getEndPoint('rentpay', 'gambit/v1/coupon-assign/history'),
+  truecallerLogin: getEndPoint('login', 'authenticate-truecaller-data', 'v2'),
+  digiliteRequest: getEndPoint('supply', 'listing-request/verified-request-callback', 'v1'),
+  fetchBrokerPackages: getEndPoint('advert', 'get-seller-ads', 'v0'),
+  showBrokerDigitizationPackages: getEndPoint('lookup', 'sapna/v1/account/show-packages'),
+  brokerRequestCallback: getEndPoint('lookup', 'sapna/requestCallback'),
+  viewOffers: getEndPoint('homeLoans', 'view_offers', 'v1'),
+  viewBankOffers: getEndPoint(rentPayEndPt, 'plutus/v1/bank-offers?api_name=BANK_SPECIAL_OFFERS_API&amp;source=APP'),
+  fetchPackageCities: getEndPoint('zeus', 'get-package-cities', 'payment/v0'),
+  fetchOwnerBoughtPackages: getEndPoint('zeus', 'bought-packages', 'payment/v0'),
+  assignOwnerPackageToListing: getEndPoint('zeus', 'assign-bought-package-to-listing', 'payment/v0'),
+  interestRateurl: 'https://housing.com/home-loans-emi-calculator?ssrDebug=true',
+  fetchNpsStatus: getEndPoint('advert', 'owner-slot-nps-details', 'v1'),
+  fetchNpsOptions: getEndPoint('feedback', 'feedback_form/questions?feedback_form_slug=supply_owner_nps_mobile_v1', 'v1'),
+  submitNpsDetails: getEndPoint('feedback', 'feedback/submit', 'v1'),
+  ownerRequestCallback: getEndPoint('zeus', 'request-callback', 'support/v0'),
+  fetchBrokerProductDetails: getEndPoint('zeus', 'get-broker-product-details', 'digitization/v0'),
+  getVoucher: getEndPoint('zeus', 'get-voucher', 'payment/v0'),
+  getIncompletePaymentDetails: getEndPoint('lookup', 'sapna/v1/opportunity/get-product-info-for-failed-payment'),
+  getDiscount: getEndPoint('zeus', 'get-discounts', 'payment/v0'),
+  nearByLeadsCount: getEndPoint('leads', 'nearby-leads-count', 'v1'),
+  rewardEligibleUser: getEndPoint('leads', 'reward-eligible-user', 'v1'),
+  rewardUnlockLeads: getEndPoint('leads', 'reward-leads', 'v1'),
+  fetchBrokerPackagesList: getEndPoint('zeus', 'brokerPackageConfig', 'packageConfig/v0'),
+  fetchLeadStats: appendPlatformAndSource(getEndPoint('leads', 'self-serve/dashboard/listview', 'v0')),
+  fetchProjectLeadsStats: <span class="fstat-no" title="function not covered" >pr</span>ojectId =&gt; <span class="cstat-no" title="statement not covered" >appendPlatformAndSource(getEndPoint('leads', `self-serve/dashboard/quickview/${projectId}`, 'v0')),</span>
+  ownerPaidPackagesList: getEndPoint('zeus', 'get-paid-packages', 'payment/v0'),
+  spotlightListings: getEndPoint('newprojects', 'new-projects', 'v1'),
+  submitOtherReport: getEndPoint('feedback', 'fraud_details/submit', 'v2'),
+  renewBrokerPackage: getEndPoint('lookup', 'sapna/v1/seller-promotions/renew-slot'),
+  fetchProjectIDs: getEndPoint('ap', 'products-mapping', null),
+  fetchAMProjectsData: getEndPoint('advert', 'slots/get-all-slots', 'v0'),
+  fetchAMProjectsName: getEndPoint('newprojects', 'new-projects/bulk-projects-data', 'v7'),
+  fetchAMProjectsInfo: <span class="fstat-no" title="function not covered" >(p</span>rojectId, startDate, endDate) =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint('advert',</span>
+    `audience-maximizer/project-events-info?project_id=${projectId}&amp;start_date=${startDate}&amp;end_date=${endDate}`, null),
+  fetchAMSlotImages: <span class="fstat-no" title="function not covered" >sl</span>otId =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint('advert', `slots/${slotId}`, 'v0'),</span>
+  downloadAMDetailedReport: <span class="fstat-no" title="function not covered" >(i</span>d, sDate, eDate) =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint('advert', `audience-maximizer/project-events-info-csv?project_id=${id}&amp;start_date=${sDate}&amp;end_date=${eDate}`, null),</span>
+  fetchBrokerCitiesList: getEndPoint('zeus', 'get-broker-cities-data', 'brokerCities/v0'),
+  getLocalitiesList: getEndPoint('zeus', 'get-localities', 'digitization/v0'),
+  dcVerifiedListingCount: getEndPoint('casa', 'filter/seller-dc-verified-slot-details', 'v1'),
+  fetchAssuredBuyBackData: getEndPoint('flats', 'seller-guarantee/user-eligibility', 'v2'),
+  postAssuredBuyBackData: getEndPoint('flats', 'seller-guarantee/consent', 'v2'),
+  fetchAllianceCardData: getEndPoint('placard', 'products', 'v2'),
+  filterKhoj: <span class="fstat-no" title="function not covered" >(s</span>ervice = <span class="branch-0 cbranch-no" title="branch not covered" >'buy',</span> version) =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint('khoj', `${service}/index/filter`, `v${version}`),</span>
+  createContactedOwner: getEndPoint('pahal', 'create_broker_contact', 'v0'),
+  brokerSlotData: getEndPoint('advert', 'broker-subscription-slots/list', 'v0'),
+  ownerContactedCount: getEndPoint('pahal', 'broker-contacted-count', 'v0'),
+  contactedOwners: <span class="fstat-no" title="function not covered" >(s</span>ervice = <span class="branch-0 cbranch-no" title="branch not covered" >'buy',</span> pageNo = <span class="branch-0 cbranch-no" title="branch not covered" >1)</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint('pahal', `contacted-properties?service=${service}&amp;property_category_id=1&amp;page_no=${pageNo}&amp;results_per_page=10&amp;source=${Platform.OS}`, 'v0'),</span>
+  getBulkDetails: getEndPoint('khoj', 'buy/get_bulk_buy_details', 'v3'),
+  getOwnerStatus: getEndPoint('casa', 'flat/get-show-to-brokers', 'v1'),
+  setOwnerStatus: getEndPoint('casa', 'flat/update-show-to-brokers', 'v1'),
+  fetchActivePkgEndDate: <span class="fstat-no" title="function not covered" >uu</span>id =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint('advert', `get-seller-ads?profile_uuid=${uuid}&amp;status_ids=2`, 'v1'),</span>
+  fetchSellerSurveyFilledStatus: <span class="fstat-no" title="function not covered" >uu</span>id =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint('feedback', `feedback/feedback_form_filled_status?profile_uuid=${uuid}&amp;feedback_form_slug=housing_happiness_survey`, 'v1'),</span>
+  fetchSellerSurveyQuestions: getEndPoint('feedback', 'feedback_form/questions?feedback_form_slug=housing_happiness_survey&amp;is_single_form=true', 'v1'),
+  submitSellerSurveyAnswers: getEndPoint('feedback', 'feedback/submit', 'v1'),
+  fetchFaqs: <span class="fstat-no" title="function not covered" >id</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/order/faqs?orderTypeId=${id}`),</span>
+&nbsp;
+  fetchFaqsV2: <span class="fstat-no" title="function not covered" >id</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/order/v2/faqs?orderTypeId=${id}`),</span>
+&nbsp;
+  fetchFaqsV3: <span class="fstat-no" title="function not covered" >id</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/order/v3/faqs?source=APP&amp;orderTypeId=${id}`),</span>
+&nbsp;
+  fetchCities: <span class="fstat-no" title="function not covered" >id</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `meggan/vendor/city?orderTypeId=${id}`),</span>
+&nbsp;
+  fetchVendors: <span class="fstat-no" title="function not covered" >id</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `meggan/vendor-catalog/vendor-list?orderTypeId=${id}`),</span>
+&nbsp;
+  fetchVendorsV2: <span class="fstat-no" title="function not covered" >id</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `meggan/vendor-catalog/v2/vendor-list?orderTypeId=${id}`),</span>
+&nbsp;
+  setuOneTimeUrl: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/data/v1/entity/setu/bill-link'),</span>
+&nbsp;
+  initiatePaymentEdge: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/data/v1/entity/order'),</span>
+&nbsp;
+  fetchPaymentOptions: <span class="fstat-no" title="function not covered" >(o</span>rderType, sourceId = <span class="branch-0 cbranch-no" title="branch not covered" >1)</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/v1/data/promotions?orderType=${orderType}&amp;sourceId=${sourceId}`),</span>
+&nbsp;
+  getConvenienceCharge: <span class="fstat-no" title="function not covered" >(o</span>rderType, amount, paymentModeId) =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt,</span>
+    `apollo/data/v2/convenienceCharge?orderType=${orderType}&amp;amount=${amount}&amp;paymentModeIds=${paymentModeId}&amp;Platform=APP`),
+&nbsp;
+  getConvenienceChargeV3: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/data/v3/convenienceCharge'),</span>
+  getConvenienceChargeV4: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/data/v4/convenienceCharge'),</span>
+&nbsp;
+  getKycEligibility: <span class="fstat-no" title="function not covered" >se</span>ssionStartTime =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `/apollo/v5/kyc/eligible?start=${sessionStartTime}`),</span>
+&nbsp;
+  consumeAndInitiatePaymentV4: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, '/apollo/v4/entity/consume-and-initiate'),</span>
+&nbsp;
+  fetchTenantDetails: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/data/v1/entity/tenant/logged-in'),</span>
+&nbsp;
+  validateReferralCode: <span class="fstat-no" title="function not covered" >re</span>ferralCode =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt,</span>
+    `apollo/v1/referral-code/validate?referralCode=${referralCode}`),
+&nbsp;
+  updateWhatsAppConsent: <span class="fstat-no" title="function not covered" >st</span>atus =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/v2/tenant/update-opt-whatsapp?optWhatsapp=${status}`),</span>
+  fetchCoinValidateUrl: <span class="fstat-no" title="function not covered" >id</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/v1/housing-coin-offer/validate?orderId=${id}`),</span>
+  fetchCashbackValidateUrl: <span class="fstat-no" title="function not covered" >id</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/v1/housing-cashback-offer/validate?orderId=${id}`),</span>
+  fetchCashbackAmountUrl: <span class="fstat-no" title="function not covered" >or</span>derId =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/app/v1/rentpay/walletAmount?orderId=${orderId}`),</span>
+&nbsp;
+  fetchCoinBalance: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'flash/v1/wallet?sourceDomain=Housing&amp;walletType=RentPay'),</span>
+&nbsp;
+  fetchFDToken: `${SERVICE.fd}/apollo/data/v1/entity/kuvera/session`,
+  fetchFDDetails: `${SERVICE.fd}/apollo/data/v1/entity/fd-details`,
+&nbsp;
+  fetchPLToken: `${SERVICE.pl}/apollo/data/v1/entity/finbox/user/session`,
+  fetchPLStatus: `${SERVICE.pl}/apollo/data/v1/entity/finbox/user/status`,
+&nbsp;
+  checkOrderStatusUrl: <span class="fstat-no" title="function not covered" >(f</span>ilters) =&gt; {
+    const endpoint = <span class="cstat-no" title="statement not covered" >`/apollo/data/v2/entity/order/selector?orderSelectorsArray=${encodeURIComponent(JSON.stringify(filters))}&amp;api_name=EDGE_ORDER_DETAILS&amp;source=mobile`</span>
+<span class="cstat-no" title="statement not covered" >    return getEndPoint(rentPayEndPt, endpoint)</span>
+  },
+  getEstimatedTimeTransferUrl: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, '/apollo/v1/config/estimated-time-transfer'),</span>
+  getEdgeSpotLightUrl: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/order/spotlight-services?count=100&amp;source=APP'),</span>
+  getRentTypeOptions: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/v1/rentpay/getRentTypeOptions'),</span>
+  teleCrmLeadUrl: <span class="fstat-no" title="function not covered" >(p</span>riority = <span class="branch-0 cbranch-no" title="branch not covered" >'High')</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `/apollo/v1/telecrm/sendlead?priority=${priority}`),</span>
+  getNativeFeedbackOptionsUrl: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, '/apollo/feedback/data/v1/getFeedbackOptions?feedbackType=5&amp;serviceObjectType=HOUSING_RENT'),</span>
+  submitNativeFeedbackOptionsUrl: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, '/apollo/feedback/data/v1/postUserFeedback'),</span>
+  fetchHpFaqs: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, '/apollo/order/v4/faqs?debug=true&amp;orderTypeId=3&amp;source=APP'),</span>
+  fetchInsuranceFaqs: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, '/apollo/order/v4/faqs?orderTypeId=51&amp;source=APP'),</span>
+  submitCreditFraudUrl: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/v1/report/fraud'),</span>
+  copyMessage: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/v1/copyMessage'),</span>
+  getRentProtectData: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getConfigApiUrl('RENT_PROTECT'),</span>
+  getHPConfigData: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getConfigApiUrl('HousingPremiumConfig'),</span>
+  getReferralCode: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/v1/referral/mesaage'),</span>
+  getReferralFaqs: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/order/v2/faqs?featureId=2'),</span>
+  getReferralConfig: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getConfigApiUrl('ReferralConfig'),</span>
+  getDiscountsConfig: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getConfigApiUrl('Discount'),</span>
+  getHpVendorOfferDataApi: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/v2/data/order/reward/vendor-offer'),</span>
+  getScratchGiftCardUrl: <span class="fstat-no" title="function not covered" >or</span>derId =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/scratch-card?orderId=${orderId}`),</span>
+  getDirectScratchGiftCardUrl: <span class="fstat-no" title="function not covered" >or</span>derId =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/v2/scratch-card?orderId=${orderId}`),</span>
+  getPocRewards: (serviceObjectTypeId = <span class="branch-0 cbranch-no" title="branch not covered" >PocUtils.ServiceObejctTypeIdValues.POC_OFFERS)</span> =&gt; getEndPoint(rentPayEndPt, `gambit/v6/offer-catalogue?serviceObjectTypeId=${serviceObjectTypeId}&amp;start=0&amp;rows=100`),
+  getPocSuccessRewards: <span class="fstat-no" title="function not covered" >(s</span>tart, rows) =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `gambit/v5/offer-catalogue-psp?serviceObjectTypeId=1&amp;start=${start}&amp;rows=${rows}`),</span>
+  getBNPLEligibility: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/v1/bnpl/eligiblity'),</span>
+  getBNPLAccessUrl: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/v2/bnpl/access-token'),</span>
+  getSubmitStatus: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/v1/bnpl/has-applied'),</span>
+  submitEligibilityData: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/v2/bnpl/submit-details?source=app'),</span>
+  getPOCSubscriptionURL: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/v3/subscription/creditPlus?orderTypeId=1&amp;serviceId=1&amp;promotedEntityType=6&amp;source=app'),</span>
+  pocSubscriptionOrderURL: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/v1/subscription/creditPlus'),</span>
+  getTnCUrlV2: <span class="fstat-no" title="function not covered" >id</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `/apollo/order/v2/terms-and-conditions?orderTypeId=${id}`),</span>
+  getJackpotWinners: <span class="fstat-no" title="function not covered" >(p</span>age, count) =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/v1/jackpot/winnersList?page=${page}&amp;count=${count}`),</span>
+  getJackpotData: <span class="fstat-no" title="function not covered" >(c</span>onfigGroup, configName) =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/v1/config/jackpot?configGroup=${configGroup}&amp;configName=${configName}`),</span>
+  getJackpotWinnerDetail: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/v1/jackpot/lastWinnersData'),</span>
+  getTotalCashbackAmount: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/v1/scratchCard/cashback'),</span>
+  claimRewardCouponApi: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/v1/rewards/coupon/status'),</span>
+  getRewardsHistoryUrl: <span class="fstat-no" title="function not covered" >se</span>lectorArrayFilter =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/v1/rewards/selector?rewardSelectorsArray=${selectorArrayFilter}`),</span>
+  getUnclaimedCoupons: <span class="fstat-no" title="function not covered" >se</span>lectorArrayFilter =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/v1/rewards/selector?rewardSelectorsArray=${selectorArrayFilter}`),</span>
+  assignCouponUrl: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/v1/reward/coupon/random'),</span>
+  packersAndMoversLeadsURL: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, '/apollo/v1/create-mp-lead?source=APP'),</span>
+  verifyIfsc: <span class="fstat-no" title="function not covered" >if</span>scCode =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `/fortuna/v2/ifsc/${ifscCode}`),</span>
+  validateVPA: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, '/fortuna/v1/validate-vpa'),</span>
+  lastSuccMergedTransactions: <span class="fstat-no" title="function not covered" >pa</span>ymentStatus =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `/apollo/data/entity/order/pay-again?${paymentStatus}`),</span>
+  fetchFailedTransactions: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/data/v2/entity/order/selector?orderSelectorsArray=%7B%22caseSubTypeId%22%3A18%2C%22filters%22%3A%7B%22and%22%3A%5B%7B%22equal%22%3A%7B%22orderType%22%3A%22HOUSING_RENT%22%7D%7D%2C%20%7B%22equal%22%3A%7B%22manualPennyDropRequired%22%3Atrue%7D%7D%5D%7D%2C%22paging%22%3A%7B%22start%22%3A0%2C%22rows%22%3A10000%7D%7D%0A%0A'),</span>
+  verifyBankAccount: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/v1/validate-bank-details'),</span>
+  verifyBankAccountV2: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/v2/validate-bank-details'),</span>
+  fetchUserFeedbackRequired: <span class="fstat-no" title="function not covered" >({</span> feedbackType = <span class="branch-0 cbranch-no" title="branch not covered" >1,</span> orderType }) =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt,</span>
+    `/apollo/feedback/data/v2/userFeedbackRequired?feedbackType=${feedbackType}&amp;serviceObjectType=${orderType}`),
+  fetchSuccessFeedbackOptions: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, '/apollo/data/v1/rentpay/getPaymentFeedbackOptions?type=1'),</span>
+  getKycDone: <span class="fstat-no" title="function not covered" >(r</span>equestId, isPrePayment) =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/v2/digio/kyc/manage/approval?requestId=${requestId}&amp;isPrePayment=${isPrePayment}`),</span>
+  fetchDigioUrl: <span class="fstat-no" title="function not covered" >is</span>PrePayment =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/v2/digio/kyc/create/request?isPrePayment=${isPrePayment}`),</span>
+  fetchLastTransactions: <span class="fstat-no" title="function not covered" >se</span>lector =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `/apollo/data/v2/entity/order/selector?${selector}`),</span>
+  getHpDropOffDiscountDetailsUrl: <span class="fstat-no" title="function not covered" >(o</span>ldOrderId, dropOffVariant) =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/deep-discount/details?oldOrderId=${oldOrderId}&amp;orderTypeId=4&amp;api_name=DROPOFF_DISCOUNT&amp;source=mobile&amp;debug=true&amp;experiment=${dropOffVariant}`),</span>
+  getHpFeedbackOptionsUrl: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/feedback/data/v1/getFeedbackOptions?feedbackType=2&amp;serviceObjectType=TENANT_MONETIZATION'),</span>
+  getStoriesContent: <span class="fstat-no" title="function not covered" >(p</span>ageType, serviceType) =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/v1/campaign/content?pageType=${pageType}&amp;serviceType=${serviceType}`),</span>
+  getStoriesContentV2: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/v2/campaign/content'),</span>
+  getStoriesContentV3: <span class="fstat-no" title="function not covered" >(p</span>ageType, serviceType, campaignType) =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/v3/campaign/content?pageType=${pageType}&amp;serviceType=${serviceType}&amp;campaignType=${campaignType}`),</span>
+  getBuilderProjects: <span class="fstat-no" title="function not covered" >uu</span>id =&gt; <span class="cstat-no" title="statement not covered" >`${getEndPoint('newprojects', 'new-projects', 'v1')}/builder/${uuid}/project-details?source_keys=name,video_key,status`,</span>
+  fetchWalletHistory: <span class="fstat-no" title="function not covered" >(s</span>tart, rows) =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `flash/v1/transaction/passbookV2?start=${start}&amp;rows=${rows}&amp;walletTypeId=3`),</span>
+  fetchWalletHistoryV3: <span class="fstat-no" title="function not covered" >(s</span>tart, rows) =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `flash/v1/transaction/passbookV3?start=${start}&amp;rows=${rows}&amp;walletTypeId=3`),</span>
+  fetchWalletBalance: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >`${getEndPoint(rentPayEndPt, 'flash/v1/wallet/coin-conversion-and-wallet-balance?sourceDomain=Housing&amp;walletType=RentPayV2')}`,</span>
+  submitHpNpsFeedback: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/feedback/data/v1/postUserFeedback?debug=true'),</span>
+  fetchHpSuccessFeedbackOptions: <span class="fstat-no" title="function not covered" >(f</span>eedbackType, serviceObjectType) =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/feedback/data/v1/getFeedbackOptions?feedbackType=${feedbackType}&amp;serviceObjectType=${serviceObjectType}`),</span>
+  fetchHpOffers: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/v4/offer-catalogue-exp?rows=1000&amp;serviceObjectTypeId=4&amp;start=0'),</span>
+  getNetworkReachability: 'https://clients3.google.com/generate_204',
+  fetchSectionRewards: <span class="fstat-no" title="function not covered" >(s</span>tart, rows) =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/v1/rewards/scratch-card?start=${start}&amp;rows=${rows}`),</span>
+  fetchExpiredLateClaimedRewards: <span class="fstat-no" title="function not covered" >se</span>lector =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/v1/rewards/selector?${selector}`),</span>
+  fetchExpiredSectionAmount: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/v1/rewards/scratch-card/expired-amount'),</span>
+  fetchDiscountAndVoucher: getEndPoint('lookup', 'sapna/v2/discount-and-offer/fetch'),
+  fetchTestimonials: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/order/testimonials?debug=true&amp;orderTypeId=3'),</span>
+  fetchIlpTestimonials: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/order/testimonials?orderTypeId=51'),</span>
+  fetchFeaturedIn: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/order/media-coverage?debug=true&amp;orderTypeId=3'),</span>
+  fetchIlpMediaCoverage: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/order/media-coverage?orderTypeId=51'),</span>
+  cancelRentProtect: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/data/entity/order/refund'),</span>
+  fetchPkgDynamicBenefits: <span class="fstat-no" title="function not covered" >uu</span>id =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint('lookup', `sapna/package-group/package-benefits-city?cityUuid=${uuid}&amp;destination=USER_APP&amp;${PLATFORM_KEY}=${Platform.OS}&amp;${SOURCE_NAME_KEY}=${SOURCE_APP}`),</span>
+  getRentAgreementConfigData: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getConfigApiUrl('RentAgreementConfig'),</span>
+&nbsp;
+  createOrderForEdge: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, '/apollo/data/v2/entity/order'),</span>
+  getStatusByEntityId: <span class="fstat-no" title="function not covered" >en</span>tityId =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `/apollo/data/v1/entity/order/selector?filters=id==${entityId}`),</span>
+  getCyberInsurance: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getConfigApiUrl('CyberInsurance'),</span>
+  getNiroPlUrl: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/v1/pl/access-token'),</span>
+  fetchHpPackages: <span class="fstat-no" title="function not covered" >(u</span>rlParams = <span class="branch-0 cbranch-no" title="branch not covered" >{})</span> =&gt; {
+    const path = <span class="cstat-no" title="statement not covered" >'product-details?promotedEntityType=6&amp;source=app'</span>
+    /**
+     * urlParams will be the javascript normal object that help to extend the path in case if any
+     */
+    const combinedUrl = <span class="cstat-no" title="statement not covered" >parameterMerger(path, urlParams)</span>
+<span class="cstat-no" title="statement not covered" >    return getEndPoint('advert', combinedUrl, 'v3')</span>
+  },
+  fetchHpSinglePackage: <span class="fstat-no" title="function not covered" >(p</span>kgId, urlParams = <span class="branch-0 cbranch-no" title="branch not covered" >{})</span> =&gt; {
+    // https://advert-edge.housing.com/api/v3/product-details?id=94&amp;platform=ios&amp;&amp;app_version=13.6.6
+    const path = <span class="cstat-no" title="statement not covered" >`product-details?id=${pkgId}&amp;app_version=${deviceInfoModule.getReadableVersion()}&amp;${PLATFORM_KEY}=${Platform.OS}&amp;${SOURCE_NAME_KEY}=${SOURCE_APP}`</span>
+    const combinedUrl = <span class="cstat-no" title="statement not covered" >parameterMerger(path, urlParams)</span>
+<span class="cstat-no" title="statement not covered" >    return getEndPoint('advert', combinedUrl, 'v3')</span>
+  },
+  fetchSellerContactedLeads: getEndPoint('leads', 'seller-contacted-lead', 'v1'),
+  fetchListingNearByLeads: getEndPoint('leads', 'listing-nearby-leads', 'v1'),
+  fetchPromotionalDetail: getEndPoint('zeus', 'get-promotional-details', 'payment/v0'),
+  onSellerViewContact: getEndPoint('leads', 'contact-lead', 'v1'),
+  fetchPOCCashbackExpDetails: <span class="fstat-no" title="function not covered" >ga</span>Id =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/app/v1/rentpay/cashbackExperimentName?gaId=${gaId}`),</span>
+  getGiudedFlowQuestions: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint('advert', 'guided-conversion/questions', 'v0'),</span>
+  fetchInstantLoanServices: <span class="fstat-no" title="function not covered" >pa</span>geType =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `/apollo/order/v2/types?source=APP&amp;pageType=${pageType}`),</span>
+  setPgDropOffExp: <span class="fstat-no" title="function not covered" >va</span>riant =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/app/v1/pg-dropoff?variant=${variant}`),</span>
+  getRnplUserInfo: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/v2/bnpl/user-info'),</span>
+  getRnplReferralCount: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/v2/bnpl/update-referral-count'),</span>
+  getBannerDetails: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/v1/config/by-name-and-group-referral?api_name=BNPL_REFER_BANNER_CONFIG&amp;source=mobile'),</span>
+  getRmDetailsUrl: <span class="fstat-no" title="function not covered" >or</span>derId =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/concierge/details?orderId=${orderId}`),</span>
+  getCuratedListURl: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/data/v1/entity/requirement/notification?debug=true'),</span>
+  getChangeRMUrl: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/concierge/change'),</span>
+  getRMFeedbackUrl: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/concierge/feedback'),</span>
+  getCallbackRequestForRm: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/concierge/request-callback'),</span>
+  fetchMyTransactionUrl: <span class="fstat-no" title="function not covered" >en</span>codedFilter =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `/apollo/data/v2/entity/order/selector?orderSelectorsArray=${encodedFilter}`),</span>
+  fetchInvoice: <span class="fstat-no" title="function not covered" >(o</span>rderId, docTypeEnum) =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `/apollo/invoice/receipt?docTypeEnum=${docTypeEnum}&amp;orderId=${orderId}`),</span>
+  getGamificationDetails: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/hp-gamification/config-details'),</span>
+  getGamificationClaimOffer: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/hp-gamification/claim-offer'),</span>
+  getHPPostPurchaseFlag: <span class="fstat-no" title="function not covered" >id</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/data/post-purchase?orderId=${id}`),</span>
+  getPaymentMethodsCustomCheckoutNonPoc: <span class="fstat-no" title="function not covered" >(o</span>rderType = <span class="branch-0 cbranch-no" title="branch not covered" >'')</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `fortuna/v1/paymentMethods?orderType=${orderType}`),</span>
+  getIINUrl: <span class="fstat-no" title="function not covered" >(i</span>in = <span class="branch-0 cbranch-no" title="branch not covered" >'')</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `fortuna/v1/iins/${iin}?debug=true`),</span>
+  saveInsurancePersonalDetails: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/update/personal-details'),</span>
+  checkPennyDropStatus: <span class="fstat-no" title="function not covered" >(t</span>ransactionUuid = <span class="branch-0 cbranch-no" title="branch not covered" >'')</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `fortuna/penny-drop/v1/status?transactionId=${transactionUuid}`),</span>
+  getHpMlDiscountUrl: <span class="fstat-no" title="function not covered" >ci</span>tyUuid =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, `apollo/deep-discount/ml?orderTypeId=4&amp;cityUuid=${cityUuid}`),</span>
+  getHpSavedCards: <span class="fstat-no" title="function not covered" >(t</span>ransactionId) =&gt; {
+    const path = <span class="cstat-no" title="statement not covered" >`fortuna/v1/savedTokens?transactionId=${transactionId}`</span>
+<span class="cstat-no" title="statement not covered" >    return getEndPoint(rentPayEndPt, path)</span>
+  },
+  checkEligibilityRazorPay: <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+    const path = <span class="cstat-no" title="statement not covered" >'fortuna/v1/customer-eligibility'</span>
+<span class="cstat-no" title="statement not covered" >    return getEndPoint(rentPayEndPt, path)</span>
+  },
+  offerOnRazorPayApi: <span class="fstat-no" title="function not covered" >pa</span>rmaValue =&gt; <span class="cstat-no" title="statement not covered" >getConfigApiUrl(parmaValue),</span>
+  getHPChatOrders: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getEndPoint(rentPayEndPt, 'apollo/chat-bot/orders?debug'),</span>
+  getCreditCardPromoData: () =&gt; getEndPoint(rentPayEndPt,'gambit/v1/tiles/credit-card-promotions')
+}
+export default apis
+&nbsp;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2024-03-18T13:40:49.340Z
+            </div>
+        <script src="../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../sorter.js"></script>
+        <script src="../../block-navigation.js"></script>
+    </body>
+</html>
+    

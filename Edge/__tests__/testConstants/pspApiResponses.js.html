@@ -1,0 +1,265 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for Edge/__tests__/testConstants/pspApiResponses.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">Edge/__tests__/testConstants</a> pspApiResponses.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/19</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/19</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input oninput="onInput()" type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const savedTokenData = <span class="cstat-no" title="statement not covered" >{"customerId":"cust_Mw0QdM69JfgDsd","apiKey":"rzp_live_q0eA8ZQdnSZj1k"}</span>
+&nbsp;
+const iinsData = <span class="cstat-no" title="statement not covered" >{"iin":"653019","network":"RuPay","type":"credit","international":false,"emi":{"available":true},"recurring":{"available":false},"network_code":"rupay","sub_type":"consumer","issuer_code":"IDFB","issuer_name":"IDFC FIRST Bank","issuer_icon":"https://contents.housing.com/51/21/688/152020700.png","issuer_icon_small":"https://contents.housing.com/51/21/688/152020701.png","network_icon":"https://contents.housing.com/51/21/688/152019292.png","tokenised":false,"card_iin":"null","authentication_types":[{"type":"3ds"}]}</span>
+&nbsp;
+const convChargeData = <span class="cstat-no" title="statement not covered" >[{"charge":2.55,"markupCharge":null,"chargeInRupees":3,"strikeThroughCharge":null,"amount":100,"totalAmount":103,"totalAmountWithoutConvFee":100,"showMarkupCharge":null,"chargeType":"percent","orderType":"HOUSING_RENT","chargeName":null,"platform":null,"rentTypeId":5,"discounts":{"totalDiscount":0,"appliedDiscounts":[]},"paymentModeId":null,"newSubscribedUser":false,"cardNetwork":null,"emi":false,"selfTransfer":false,"convChargeId":9068812,"additionalConvFeesData":null,"totalConvFees":3}]</span>
+&nbsp;
+const kycData = <span class="cstat-no" title="statement not covered" >{"kycVerificationStatus":false,"kycRequestId":11393892,"delayPayout":false}</span>
+&nbsp;
+const consumeAndInitiateData = <span class="cstat-no" title="statement not covered" >{"responseDtos":[{"initiatePaymentResponse":{"apiKeyId":"rzp_live_q0eA8ZQdnSZj1k","amount":103.0,"currency":"INR","orderId":"order_NiAYuNLIqVyBy9","transactionId":"428bae8a-2672-4779-aa78-058cb32b596b","payerDetail":{"entityType":"ORDER","referenceId":"518daa4b-36a7-4a87-931f-81dddd2148a6","firstName":"test","lastName":null,"phone":"9019019017","email":"test@housing.com"},"orderType":"ORDER"},"entityId":64826049}],"variationName":"","isEligibleForTransientDiscount":false}</span>
+&nbsp;
+const coinConversion = <span class="cstat-no" title="statement not covered" >{"id":1345706,"walletTypeId":3,"walletType":{"id":3,"name":"RentPayV2","domainId":"5"},"ownerId":"518daa4b-36a7-4a87-931f-81dddd2148a6","balance":0.0,"active":true,"createdAt":"2024-01-22T11:46:13.000+00:00","updatedAt":"2024-01-22T11:46:13.000+00:00","createdBy":0,"updatedBy":0,"coinConvertedToWalletBalance":false,"userOwnerId":"7400d2c7-8d4f-4ff2-a87e-e6439c3fe7be","processed":true}</span>
+&nbsp;
+const userProfile = <span class="cstat-no" title="statement not covered" >{"userUuid":"7400d2c7-8d4f-4ff2-a87e-e6439c3fe7be","profiles":["5de461e1-3029-4c54-aea3-10a960d80a7f","8f15229c-06b8-4540-b36c-13da94eaf5ff","c888cf40-8882-4b92-bfa0-8389199d73df","5f51bace-5aed-4291-8cc9-f22c5202f080","501624fb-03a6-427c-a539-20f1a3232867","518daa4b-36a7-4a87-931f-81dddd2148a6"],"tenants":null,"tenantName":"rahul","imageUrl":null,"creditPlusDetails":[],"rentProtectDetails":[],"cyberInsuranceDetails":[],"userOrderLimits":[{"currentCount":2,"rentTypeId":5,"currentMonthEndDate":1711929599999}],"referralCode":"1gjmg","jackpotUser":null,"payAgainCards":[{"orderType":"HOUSING_RENT","caseSubTypeId":18,"caseTypeId":17,"id":64826049,"createdAt":1709531554057,"updatedAt":1709531581491,"orderId":"339464826049","userId":4555576,"transactionId":"428bae8a-2672-4779-aa78-058cb32b596b","status":"PAYMENT_SUCCESSFUL","invoiceUrl":"http://hsng.co/5xHmGLFJ23X1","paymentReceiptUrl":"http://hsng.co/NqPk77i8kAoT","platform":"Android","deepDiscountFlag":false,"actions":[{"currentStatusId":103,"nextStatusId":104,"reasonId":266,"performedTime":1709531554294,"agentId":1},{"currentStatusId":104,"nextStatusId":96,"reasonId":251,"performedTime":1709531579000,"agentId":1}],"cyberInsurance":false,"amount":100,"conveniencefees":3,"totalAmount":103,"rentMonth":2,"paymentDate":1709531552743,"landLordbankAccounts":{"id":0,"accountNumber":"31870100008818","ifscCode":"BARB0LDALUC","active":null,"createdAt":null,"upi":null},"tenantName":"test","tenantEmail":"test@housing.com","tenantContactNumber":"9019019017","landlordName":"Parjanya","cityId":"f97f947ffae6408ac295","paymentModeId":2,"userDto":{"profileUuid":"518daa4b-36a7-4a87-931f-81dddd2148a6","fullName":"test","email":"test@housing.com","optWhatsapp":false,"dob":null,"address":null},"rentTypeId":5,"gaId":"58edfbc755f2974a","referralDiscount":0,"coinDiscount":0,"coinCount":0,"subscriptionDiscount":0,"subscriptionDiscountAmount":0,"manualPennyDropRequired":false,"paymentResponse":{"gatewayPaymentId":"pay_NiAZ2LFyFyUVKr","paymentCardDto":{"last4":"0802","network":"RuPay","type":"credit","issuer":"IDFB"},"paymentGateway":"payu"},"payoutResponse":{"bankName":"Bank of Baroda","manualPennyDropRequired":false,"autoRetryStage":false,"manualPennyDropStage":false,"userAccountCreationStatus":false},"ipAddress":"49.36.177.229","fraud":false,"sourceVersion":"14.0.10.457","spinScore":0.0,"spinDiscount":0,"housingCoinOffer":false,"shouldAllocateCoin":true,"scratchCard":true,"rentProtect":false,"payoutCreationTime":1709531520500,"subscription":false,"payoutUserType":"REDMARKED_USER","walletAmount":0,"delayPayout":false,"jackpotExperimentUser":true,"transientDiscountAmount":0,"flashDiscountAmount":0,"educationFeesDiscountAmount":0,"nextMonthDiscount":0,"autoRetryStage":false,"manualPennyDropStage":false,"selfTransfer":false,"orderType":"HOUSING_RENT"},{"orderType":"HOUSING_RENT","caseSubTypeId":18,"caseTypeId":17,"id":62938524,"createdAt":1699015542651,"updatedAt":1708348802178,"orderId":"696662938524","userId":3169953,"transactionId":"4e3b0bab-e67e-40d3-a9ac-b7d63128a00c","status":"PAYOUT_SUCCESSFUL","utr":"330830576265","invoiceUrl":"http://hsng.co/43t2m9UDnf0o","paymentReceiptUrl":"http://hsng.co/1VPDWp3CKu6c","platform":"Android","deepDiscountFlag":false,"actions":[{"currentStatusId":103,"nextStatusId":104,"reasonId":266,"performedTime":1699015543491,"agentId":1},{"currentStatusId":104,"nextStatusId":96,"reasonId":251,"performedTime":1699015691000,"agentId":1},{"currentStatusId":96,"nextStatusId":105,"reasonId":267,"performedTime":1699099221000,"agentId":1},{"currentStatusId":105,"nextStatusId":106,"reasonId":268,"performedTime":1699099244000,"agentId":1}],"cyberInsurance":false,"amount":100,"conveniencefees":2,"totalAmount":102,"rentMonth":10,"paymentDate":1699015541338,"landLordbankAccounts":{"id":0,"accountNumber":null,"ifscCode":null,"active":null,"createdAt":null,"upi":"rishabh.khampariya94@okaxis"},"tenantName":"rahul","tenantEmail":"test@housing.com","tenantContactNumber":"9019019017","landlordName":"RISHABH KUMAR KHAMPARIYA","cityId":"747be13fe47cb8ae14c3","paymentModeId":2,"userDto":{"profileUuid":"8f15229c-06b8-4540-b36c-13da94eaf5ff","fullName":"rahul","email":"test@housing.com","optWhatsapp":true,"dob":null,"address":null},"rentTypeId":5,"gaId":"520fb5a43cc07a65","referralDiscount":0,"coinDiscount":0,"coinCount":0,"subscriptionDiscount":0,"subscriptionDiscountAmount":0,"manualPennyDropRequired":false,"paymentResponse":{"gatewayPaymentId":"pay_Mw0SZZQKYiHOZb","paymentCardDto":{"last4":"7245","network":"Visa","type":"credit","issuer":"UTIB"},"paymentGateway":"pinelabs"},"payoutResponse":{"gatewayPaymentId":"pout_MwOBqUWlWgGKca","utr":"330830576265","manualPennyDropRequired":false,"autoRetryStage":false,"manualPennyDropStage":false,"userAccountCreationStatus":false},"ipAddress":"122.171.22.239","fraud":false,"sourceVersion":"13.8.801.452","spinScore":0.0,"housingCoinOffer":false,"shouldAllocateCoin":true,"scratchCard":true,"rentProtect":false,"payoutCreationTime":1699098432597,"subscription":false,"payoutUserType":"REDMARKED_USER","walletAmount":0,"delayPayout":true,"jackpotExperimentUser":true,"transientDiscountAmount":0,"flashDiscountAmount":0,"educationFeesDiscountAmount":0,"autoRetryStage":false,"manualPennyDropStage":false,"selfTransfer":false,"orderType":"HOUSING_RENT"},{"orderType":"HOUSING_RENT","caseSubTypeId":18,"caseTypeId":17,"id":61876376,"createdAt":1692370041945,"updatedAt":1708348901880,"orderId":"930161876376","userId":2451544,"transactionId":"7874b7bc-ae81-48ce-8cd2-d069beb17193","status":"PAYOUT_SUCCESSFUL","utr":"323012020646","invoiceUrl":"http://hsng.co/4Nf8dFG7H44g","platform":"Android","deepDiscountFlag":false,"actions":[{"currentStatusId":103,"nextStatusId":104,"reasonId":266,"performedTime":1692370042262,"agentId":1},{"currentStatusId":104,"nextStatusId":96,"reasonId":251,"performedTime":1692370139000,"agentId":1},{"currentStatusId":96,"nextStatusId":105,"reasonId":267,"performedTime":1692370145000,"agentId":1},{"currentStatusId":105,"nextStatusId":106,"reasonId":268,"performedTime":1692370168000,"agentId":1}],"cyberInsurance":false,"amount":100,"conveniencefees":2,"totalAmount":102,"rentMonth":7,"paymentDate":1692370041139,"landLordbankAccounts":{"id":0,"accountNumber":null,"ifscCode":null,"active":null,"createdAt":null,"upi":"8927966963@ybl"},"tenantName":"rahul","tenantEmail":"test@housing.com","tenantContactNumber":"9019019017","landlordName":"SUBHANKAR MAITI","cityId":"90d5af399d7256af0694","paymentModeId":2,"userDto":{"profileUuid":"5de461e1-3029-4c54-aea3-10a960d80a7f","fullName":"rahul","email":"test@housing.com","optWhatsapp":false,"dob":null,"address":null},"rentTypeId":5,"gaId":"481e83492763a61d","referralDiscount":0,"coinDiscount":0,"coinCount":0,"subscriptionDiscount":0,"subscriptionDiscountAmount":0,"manualPennyDropRequired":false,"paymentResponse":{"gatewayPaymentId":"pay_MRZNuTxovmZPzb","paymentCardDto":{"last4":"9006","network":"Visa","type":"credit","issuer":"ICIC"},"paymentGateway":"pinelabs"},"payoutResponse":{"gatewayPaymentId":"pout_MRZOgZ1sDZHn6G","utr":"323012020646","manualPennyDropRequired":false,"autoRetryStage":false,"manualPennyDropStage":false,"userAccountCreationStatus":false},"ipAddress":"152.58.178.96","fraud":false,"sourceVersion":"13.6.8.409003","spinScore":0.0,"housingCoinOffer":false,"shouldAllocateCoin":true,"scratchCard":true,"rentProtect":false,"payoutCreationTime":1692370080845,"subscription":false,"payoutUserType":"REPEAT_USER","walletAmount":2,"delayPayout":false,"jackpotExperimentUser":true,"transientDiscountAmount":0,"autoRetryStage":false,"manualPennyDropStage":false,"selfTransfer":false,"orderType":"HOUSING_RENT"},{"orderType":"HOUSING_RENT","caseSubTypeId":18,"caseTypeId":17,"id":61428972,"createdAt":1689147535942,"updatedAt":1689147893683,"orderId":"541361428972","userId":2451544,"transactionId":"fef9d589-746c-4d47-8bbf-dbdc24c77e02","receiptUrl":"https://contents.housing.com/2/52/61428972/690/bc6e452b-6d77-44b1.pdf","status":"PAYOUT_SUCCESSFUL","utr":"319328035577","platform":"Android","deepDiscountFlag":false,"actions":[{"currentStatusId":103,"nextStatusId":104,"reasonId":266,"performedTime":1689147536497,"agentId":1},{"currentStatusId":104,"nextStatusId":96,"reasonId":251,"performedTime":1689147779000,"agentId":1},{"currentStatusId":96,"nextStatusId":105,"reasonId":267,"performedTime":1689147784000,"agentId":1},{"currentStatusId":105,"nextStatusId":106,"reasonId":268,"performedTime":1689147789000,"agentId":1}],"cyberInsurance":false,"amount":100,"conveniencefees":2,"totalAmount":102,"rentMonth":6,"paymentDate":1689147535045,"landLordbankAccounts":{"id":0,"accountNumber":"50100087765193","ifscCode":"HDFC0002710","active":null,"createdAt":null,"upi":null},"tenantName":"Test","tenantEmail":"test@housing.com","tenantContactNumber":"9019019017","landlordName":"Abhi Jeet","propertyAddress":"patparganj","cityId":"f97f947ffae6408ac295","paymentModeId":2,"userDto":{"profileUuid":"5de461e1-3029-4c54-aea3-10a960d80a7f","fullName":"Test","email":"test@housing.com","optWhatsapp":true,"dob":null,"address":null},"rentTypeId":5,"gaId":"ed546687654a50d9","referralDiscount":0,"coinDiscount":0,"coinCount":0,"subscriptionDiscount":0,"subscriptionDiscountAmount":0,"manualPennyDropRequired":false,"paymentResponse":{"gatewayPaymentId":"pay_MCoJWwTeEXrurb","paymentCardDto":{"last4":"8548","network":"Visa","type":"credit","issuer":"CITI"},"paymentGateway":"pinelabs"},"payoutResponse":{"gatewayPaymentId":"pout_MCoND6oR4WQgNB","utr":"319328035577","bankName":"HDFC Bank","manualPennyDropRequired":false,"autoRetryStage":false,"manualPennyDropStage":false,"userAccountCreationStatus":false},"ipAddress":"182.69.176.144","fraud":false,"sourceVersion":"13.6.501.113556","offerIds":[181],"spinScore":0.0,"housingCoinOffer":false,"shouldAllocateCoin":true,"scratchCard":true,"rentProtect":false,"payoutCreationTime":1689147720220,"subscription":false,"payoutUserType":"REPEAT_USER","walletAmount":2,"delayPayout":false,"jackpotExperimentUser":true,"transientDiscountAmount":0,"autoRetryStage":false,"manualPennyDropStage":false,"selfTransfer":false,"orderType":"HOUSING_RENT"},{"orderType":"HOUSING_RENT","caseSubTypeId":18,"caseTypeId":17,"id":9272622,"createdAt":1675851318822,"updatedAt":1675936829364,"orderId":"63549272622","userId":2451544,"transactionId":"fb6900d9-2879-44ce-bbd5-00ca4037bc98","status":"PAYOUT_SUCCESSFUL","utr":"304026058061","platform":"dweb","deepDiscountFlag":false,"actions":[{"currentStatusId":103,"nextStatusId":104,"reasonId":266,"performedTime":1675851319444,"agentId":1},{"currentStatusId":104,"nextStatusId":96,"reasonId":251,"performedTime":1675851351000,"agentId":1},{"currentStatusId":96,"nextStatusId":105,"reasonId":267,"performedTime":1675936808000,"agentId":1},{"currentStatusId":105,"nextStatusId":106,"reasonId":268,"performedTime":1675936816000,"agentId":1}],"cyberInsurance":false,"amount":100,"conveniencefees":2,"totalAmount":102,"rentMonth":1,"paymentDate":1675728000000,"landLordbankAccounts":{"id":0,"accountNumber":"50200001439322","ifscCode":"HDFC0000239","active":null,"createdAt":null,"upi":null},"tenantName":"Test","tenantEmail":"test@housing.com","tenantContactNumber":"9019019017","landlordName":"Pawan","paymentModeId":2,"userDto":{"profileUuid":"5de461e1-3029-4c54-aea3-10a960d80a7f","fullName":null,"email":"test@housing.com","optWhatsapp":null,"dob":null,"address":null},"rentTypeId":5,"gaId":"GA1.2.630922540.1669717600","referralDiscount":0,"coinDiscount":0,"coinCount":0,"subscriptionDiscount":0,"subscriptionDiscountAmount":0,"manualPennyDropRequired":false,"paymentResponse":{"gatewayPaymentId":"pay_LDuhcBNrytmhxU","paymentCardDto":{"last4":"7120","network":"MasterCard","type":"credit","issuer":"STCB"},"paymentGateway":"Razorpay"},"payoutResponse":{"gatewayPaymentId":"pout_LEIyZpnUzvFpXz","utr":"304026058061","bankName":"HDFC Bank","manualPennyDropRequired":false,"statusReason":"payout_processed","statusDescription":"Payout is processed and the money has been credited into the beneficiaries account.","autoRetryStage":false,"manualPennyDropStage":false,"userAccountCreationStatus":false},"ipAddress":"10.0.12.220","fraud":false,"spinScore":0.0,"housingCoinOffer":true,"shouldAllocateCoin":true,"scratchCard":true,"rentProtect":false,"payoutCreationTime":1675934118826,"subscription":false,"payoutUserType":"NEW_USER","walletAmount":0,"delayPayout":true,"jackpotExperimentUser":false,"autoRetryStage":false,"manualPennyDropStage":false,"selfTransfer":false,"orderType":"HOUSING_RENT"}],"pac":true,"cvrScore":"0.03125","includeCyberWithConvenienceFee":false,"pocFeeIncreaseExperiment":false,"pocFeeIncreaseExperimentVariant":null}</span>
+&nbsp;
+&nbsp;
+const paymentCallBack = <span class="cstat-no" title="statement not covered" >[{"entityType":"ORDER","entityId":"64826049","transactionType":"PAYOUT","paymentCallbackStatus":"PAYOUT_INITIATED","paymentResponse":{"gatewayPaymentId":"pay_NiAZ2LFyFyUVKr","amount":103.0,"successfulAt":"2024-03-04T05:52:59.000+0000","initiatedAt":"2024-03-04T05:52:34.000+0000","status":"SUCCESS","paymentMode":"CREDIT_CARD","paymentCardDto":{"last4":"0802","network":"RuPay","type":"credit","issuer":"IDFB"},"paymentGateway":"payu"},"payoutResponse":{"amount":100.0,"status":"WAITING","bankName":"Bank of Baroda","manualPennyDropRequired":false,"payeeIfsc":"BARB0LDALUC","payeeAccNum":"31870100008818","autoRetryStage":false,"manualPennyDropStage":false,"userAccountCreationStatus":false},"transactionId":"428bae8a-2672-4779-aa78-058cb32b596b","isRetry":false,"extraData":"{\"apolloOrderId\":\"339464826049\"}"}]</span>
+&nbsp;
+const estimatedTime = <span class="cstat-no" title="statement not covered" >{"value":"5"}</span>
+&nbsp;
+const pspTilesData = <span class="cstat-no" title="statement not covered" >{"tiles":[{"tile":{"id":6,"tileName":"Decreasing Fee Gradient","priority":1,"isActive":true,"actionType":"Redirection","actionValue":"http://housing.com/edge/pay-rent","createdAt":"2024-02-08T14:23:47.000+0000","updatedAt":"2024-02-27T03:21:35.000+0000"},"placeholders":[{"key":"aestheticImageUrl","value":"https://contents.housing.com/51/21/688/156225019.png","keyType":"Image"},{"key":"bigText","value":"Fee reduces after each payment today","keyType":"String"},{"key":"text","value":"More you pay, more you save","keyType":"String"}]},{"tile":{"id":2,"tileName":"Pitching Other Categories","priority":3,"isActive":true,"actionType":"Redirection","actionValue":"http://housing.com/edge/pay-rent","createdAt":"2024-01-22T10:10:50.000+0000","updatedAt":"2024-02-08T14:21:50.000+0000"},"placeholders":[{"key":"bigText","value":"Make other payments too","keyType":"String"},{"key":"text","value":"You can pay more for categories such as Office Rent, Education Fees, etc","keyType":"String"},{"key":"aestheticImageUrl","value":"https://contents.housing.com/52/1/756/154864045.png","keyType":"Image"}]},{"tile":{"id":3,"tileName":"Subscription Card: Unsubscribed User","priority":4,"isActive":true,"actionType":"Modal","actionValue":"Credit Plus","createdAt":"2024-01-22T10:10:50.000+0000","updatedAt":"2024-02-08T14:21:50.000+0000"},"placeholders":[{"key":"bigText","value":"Hey, You could have saved ₹{CreditPlusMissedDiscount} more! \uD83D\uDE1F","keyType":"String"},{"key":"aestheticImageUrl","value":"https://contents.housing.com/52/1/756/154864046.png","keyType":"Image"}]},{"tile":{"id":4,"tileName":"Subscription Card: Subscribed User","priority":4,"isActive":true,"actionValue":"Credit Plus","createdAt":"2024-01-22T10:10:50.000+0000","updatedAt":"2024-02-08T14:21:50.000+0000"},"placeholders":[{"key":"bigText","value":"Yay! You have saved ₹{CreditPlusDiscount} \uD83C\uDF89","keyType":"String"},{"key":"text","value":"Total Savings ₹{CreditPlusTotalDiscount}","keyType":"String"},{"key":"aestheticImageUrl","value":"https://contents.housing.com/52/1/756/154864046.png","keyType":"Image"}]},{"tile":{"id":5,"tileName":"Referral Card","priority":4,"isActive":true,"actionType":"Whatsapp","actionValue":"Referral","createdAt":"2024-01-22T10:10:50.000+0000","updatedAt":"2024-02-08T14:21:50.000+0000"},"placeholders":[{"key":"bigText","value":"Invite a friend, Earn upto ₹{MaxReferrerCashbackValue}","keyType":"String"},{"key":"aestheticImageUrl","value":"https://contents.housing.com/52/1/756/154864087.png","keyType":"Image"}]}]}</span>
+&nbsp;
+const optWhatsapp = <span class="cstat-no" title="statement not covered" >{"id":4555576,"profileUuid":"518daa4b-36a7-4a87-931f-81dddd2148a6","optWhatsapp":true,"createdAt":null,"updatedAt":null,"fullName":null,"email":null}</span>
+&nbsp;
+const offerCataloguePsp = <span class="cstat-no" title="statement not covered" >{"OfferDetails":[]}</span>
+&nbsp;
+const scratchCard = <span class="cstat-no" title="statement not covered" >{"id":3929858,"orderId":64826049,"amount":0,"userId":"518daa4b-36a7-4a87-931f-81dddd2148a6","status":"UNCLAIMED","createdAt":1709531581000,"updatedAt":1709531581000,"expiredAt":1717307581000,"jackpotCard":false,"offerId":null,"powerUserCard":false}</span>
+&nbsp;
+const cashbackOfferValidate = <span class="cstat-no" title="statement not covered" >true</span>
+&nbsp;
+const userProfilePsp = <span class="cstat-no" title="statement not covered" >{"userUuid":"7400d2c7-8d4f-4ff2-a87e-e6439c3fe7be","profiles":["5de461e1-3029-4c54-aea3-10a960d80a7f","8f15229c-06b8-4540-b36c-13da94eaf5ff","c888cf40-8882-4b92-bfa0-8389199d73df","5f51bace-5aed-4291-8cc9-f22c5202f080","501624fb-03a6-427c-a539-20f1a3232867","518daa4b-36a7-4a87-931f-81dddd2148a6"],"tenants":null,"tenantName":"test","imageUrl":null,"creditPlusDetails":[],"rentProtectDetails":[],"cyberInsuranceDetails":[],"userOrderLimits":[{"currentCount":2,"rentTypeId":5,"currentMonthEndDate":1711929599999}],"referralCode":"1gjmg","jackpotUser":null,"payAgainCards":[{"orderType":"HOUSING_RENT","caseSubTypeId":18,"caseTypeId":17,"id":64826049,"createdAt":1709531554057,"updatedAt":1709531592561,"orderId":"339464826049","userId":4555576,"transactionId":"428bae8a-2672-4779-aa78-058cb32b596b","status":"PAYOUT_SUCCESSFUL","utr":"406411895999","invoiceUrl":"http://hsng.co/5xHmGLFJ23X1","paymentReceiptUrl":"http://hsng.co/NqPk77i8kAoT","platform":"Android","deepDiscountFlag":false,"actions":[{"currentStatusId":103,"nextStatusId":104,"reasonId":266,"performedTime":1709531554294,"agentId":1},{"currentStatusId":104,"nextStatusId":96,"reasonId":251,"performedTime":1709531579000,"agentId":1},{"currentStatusId":96,"nextStatusId":105,"reasonId":267,"performedTime":1709531583000,"agentId":1},{"currentStatusId":105,"nextStatusId":106,"reasonId":268,"performedTime":1709531592000,"agentId":1}],"cyberInsurance":false,"amount":100,"conveniencefees":3,"totalAmount":103,"rentMonth":2,"paymentDate":1709531552743,"landLordbankAccounts":{"id":0,"accountNumber":"31870100008818","ifscCode":"BARB0LDALUC","active":null,"createdAt":null,"upi":null},"tenantName":"test","tenantEmail":"test@housing.com","tenantContactNumber":"9019019017","landlordName":"Parjanya","cityId":"f97f947ffae6408ac295","paymentModeId":2,"userDto":{"profileUuid":"518daa4b-36a7-4a87-931f-81dddd2148a6","fullName":"test","email":"test@housing.com","optWhatsapp":false,"dob":null,"address":null},"rentTypeId":5,"gaId":"58edfbc755f2974a","referralDiscount":0,"coinDiscount":0,"coinCount":0,"subscriptionDiscount":0,"subscriptionDiscountAmount":0,"manualPennyDropRequired":false,"paymentResponse":{"gatewayPaymentId":"pay_NiAZ2LFyFyUVKr","paymentCardDto":{"last4":"0802","network":"RuPay","type":"credit","issuer":"IDFB"},"paymentGateway":"payu"},"payoutResponse":{"gatewayPaymentId":"pout_NiAZQHcGqFSxtW","utr":"406411895999","bankName":"Bank of Baroda","manualPennyDropRequired":false,"autoRetryStage":false,"manualPennyDropStage":false,"userAccountCreationStatus":false},"ipAddress":"49.36.177.229","fraud":false,"sourceVersion":"14.0.10.457","spinScore":0.0,"spinDiscount":0,"housingCoinOffer":false,"shouldAllocateCoin":true,"scratchCard":true,"rentProtect":false,"payoutCreationTime":1709531520500,"subscription":false,"payoutUserType":"REDMARKED_USER","walletAmount":0,"delayPayout":false,"jackpotExperimentUser":true,"transientDiscountAmount":0,"flashDiscountAmount":0,"educationFeesDiscountAmount":0,"nextMonthDiscount":0,"autoRetryStage":false,"manualPennyDropStage":false,"selfTransfer":false,"orderType":"HOUSING_RENT"},{"orderType":"HOUSING_RENT","caseSubTypeId":18,"caseTypeId":17,"id":62938524,"createdAt":1699015542651,"updatedAt":1708348802178,"orderId":"696662938524","userId":3169953,"transactionId":"4e3b0bab-e67e-40d3-a9ac-b7d63128a00c","status":"PAYOUT_SUCCESSFUL","utr":"330830576265","invoiceUrl":"http://hsng.co/43t2m9UDnf0o","paymentReceiptUrl":"http://hsng.co/1VPDWp3CKu6c","platform":"Android","deepDiscountFlag":false,"actions":[{"currentStatusId":103,"nextStatusId":104,"reasonId":266,"performedTime":1699015543491,"agentId":1},{"currentStatusId":104,"nextStatusId":96,"reasonId":251,"performedTime":1699015691000,"agentId":1},{"currentStatusId":96,"nextStatusId":105,"reasonId":267,"performedTime":1699099221000,"agentId":1},{"currentStatusId":105,"nextStatusId":106,"reasonId":268,"performedTime":1699099244000,"agentId":1}],"cyberInsurance":false,"amount":100,"conveniencefees":2,"totalAmount":102,"rentMonth":10,"paymentDate":1699015541338,"landLordbankAccounts":{"id":0,"accountNumber":null,"ifscCode":null,"active":null,"createdAt":null,"upi":"rishabh.khampariya94@okaxis"},"tenantName":"rahul","tenantEmail":"test@housing.com","tenantContactNumber":"9019019017","landlordName":"RISHABH KUMAR KHAMPARIYA","cityId":"747be13fe47cb8ae14c3","paymentModeId":2,"userDto":{"profileUuid":"8f15229c-06b8-4540-b36c-13da94eaf5ff","fullName":"rahul","email":"test@housing.com","optWhatsapp":true,"dob":null,"address":null},"rentTypeId":5,"gaId":"520fb5a43cc07a65","referralDiscount":0,"coinDiscount":0,"coinCount":0,"subscriptionDiscount":0,"subscriptionDiscountAmount":0,"manualPennyDropRequired":false,"paymentResponse":{"gatewayPaymentId":"pay_Mw0SZZQKYiHOZb","paymentCardDto":{"last4":"7245","network":"Visa","type":"credit","issuer":"UTIB"},"paymentGateway":"pinelabs"},"payoutResponse":{"gatewayPaymentId":"pout_MwOBqUWlWgGKca","utr":"330830576265","manualPennyDropRequired":false,"autoRetryStage":false,"manualPennyDropStage":false,"userAccountCreationStatus":false},"ipAddress":"122.171.22.239","fraud":false,"sourceVersion":"13.8.801.452","spinScore":0.0,"housingCoinOffer":false,"shouldAllocateCoin":true,"scratchCard":true,"rentProtect":false,"payoutCreationTime":1699098432597,"subscription":false,"payoutUserType":"REDMARKED_USER","walletAmount":0,"delayPayout":true,"jackpotExperimentUser":true,"transientDiscountAmount":0,"flashDiscountAmount":0,"educationFeesDiscountAmount":0,"autoRetryStage":false,"manualPennyDropStage":false,"selfTransfer":false,"orderType":"HOUSING_RENT"},{"orderType":"HOUSING_RENT","caseSubTypeId":18,"caseTypeId":17,"id":61876376,"createdAt":1692370041945,"updatedAt":1708348901880,"orderId":"930161876376","userId":2451544,"transactionId":"7874b7bc-ae81-48ce-8cd2-d069beb17193","status":"PAYOUT_SUCCESSFUL","utr":"323012020646","invoiceUrl":"http://hsng.co/4Nf8dFG7H44g","platform":"Android","deepDiscountFlag":false,"actions":[{"currentStatusId":103,"nextStatusId":104,"reasonId":266,"performedTime":1692370042262,"agentId":1},{"currentStatusId":104,"nextStatusId":96,"reasonId":251,"performedTime":1692370139000,"agentId":1},{"currentStatusId":96,"nextStatusId":105,"reasonId":267,"performedTime":1692370145000,"agentId":1},{"currentStatusId":105,"nextStatusId":106,"reasonId":268,"performedTime":1692370168000,"agentId":1}],"cyberInsurance":false,"amount":100,"conveniencefees":2,"totalAmount":102,"rentMonth":7,"paymentDate":1692370041139,"landLordbankAccounts":{"id":0,"accountNumber":null,"ifscCode":null,"active":null,"createdAt":null,"upi":"8927966963@ybl"},"tenantName":"rahul","tenantEmail":"test@housing.com","tenantContactNumber":"9019019017","landlordName":"SUBHANKAR MAITI","cityId":"90d5af399d7256af0694","paymentModeId":2,"userDto":{"profileUuid":"5de461e1-3029-4c54-aea3-10a960d80a7f","fullName":"rahul","email":"test@housing.com","optWhatsapp":false,"dob":null,"address":null},"rentTypeId":5,"gaId":"481e83492763a61d","referralDiscount":0,"coinDiscount":0,"coinCount":0,"subscriptionDiscount":0,"subscriptionDiscountAmount":0,"manualPennyDropRequired":false,"paymentResponse":{"gatewayPaymentId":"pay_MRZNuTxovmZPzb","paymentCardDto":{"last4":"9006","network":"Visa","type":"credit","issuer":"ICIC"},"paymentGateway":"pinelabs"},"payoutResponse":{"gatewayPaymentId":"pout_MRZOgZ1sDZHn6G","utr":"323012020646","manualPennyDropRequired":false,"autoRetryStage":false,"manualPennyDropStage":false,"userAccountCreationStatus":false},"ipAddress":"152.58.178.96","fraud":false,"sourceVersion":"13.6.8.409003","spinScore":0.0,"housingCoinOffer":false,"shouldAllocateCoin":true,"scratchCard":true,"rentProtect":false,"payoutCreationTime":1692370080845,"subscription":false,"payoutUserType":"REPEAT_USER","walletAmount":2,"delayPayout":false,"jackpotExperimentUser":true,"transientDiscountAmount":0,"autoRetryStage":false,"manualPennyDropStage":false,"selfTransfer":false,"orderType":"HOUSING_RENT"},{"orderType":"HOUSING_RENT","caseSubTypeId":18,"caseTypeId":17,"id":61428972,"createdAt":1689147535942,"updatedAt":1689147893683,"orderId":"541361428972","userId":2451544,"transactionId":"fef9d589-746c-4d47-8bbf-dbdc24c77e02","receiptUrl":"https://contents.housing.com/2/52/61428972/690/bc6e452b-6d77-44b1.pdf","status":"PAYOUT_SUCCESSFUL","utr":"319328035577","platform":"Android","deepDiscountFlag":false,"actions":[{"currentStatusId":103,"nextStatusId":104,"reasonId":266,"performedTime":1689147536497,"agentId":1},{"currentStatusId":104,"nextStatusId":96,"reasonId":251,"performedTime":1689147779000,"agentId":1},{"currentStatusId":96,"nextStatusId":105,"reasonId":267,"performedTime":1689147784000,"agentId":1},{"currentStatusId":105,"nextStatusId":106,"reasonId":268,"performedTime":1689147789000,"agentId":1}],"cyberInsurance":false,"amount":100,"conveniencefees":2,"totalAmount":102,"rentMonth":6,"paymentDate":1689147535045,"landLordbankAccounts":{"id":0,"accountNumber":"50100087765193","ifscCode":"HDFC0002710","active":null,"createdAt":null,"upi":null},"tenantName":"Test","tenantEmail":"test@housing.com","tenantContactNumber":"9019019017","landlordName":"Abhi Jeet","propertyAddress":"patparganj","cityId":"f97f947ffae6408ac295","paymentModeId":2,"userDto":{"profileUuid":"5de461e1-3029-4c54-aea3-10a960d80a7f","fullName":"Test","email":"test@housing.com","optWhatsapp":true,"dob":null,"address":null},"rentTypeId":5,"gaId":"ed546687654a50d9","referralDiscount":0,"coinDiscount":0,"coinCount":0,"subscriptionDiscount":0,"subscriptionDiscountAmount":0,"manualPennyDropRequired":false,"paymentResponse":{"gatewayPaymentId":"pay_MCoJWwTeEXrurb","paymentCardDto":{"last4":"8548","network":"Visa","type":"credit","issuer":"CITI"},"paymentGateway":"pinelabs"},"payoutResponse":{"gatewayPaymentId":"pout_MCoND6oR4WQgNB","utr":"319328035577","bankName":"HDFC Bank","manualPennyDropRequired":false,"autoRetryStage":false,"manualPennyDropStage":false,"userAccountCreationStatus":false},"ipAddress":"182.69.176.144","fraud":false,"sourceVersion":"13.6.501.113556","offerIds":[181],"spinScore":0.0,"housingCoinOffer":false,"shouldAllocateCoin":true,"scratchCard":true,"rentProtect":false,"payoutCreationTime":1689147720220,"subscription":false,"payoutUserType":"REPEAT_USER","walletAmount":2,"delayPayout":false,"jackpotExperimentUser":true,"transientDiscountAmount":0,"autoRetryStage":false,"manualPennyDropStage":false,"selfTransfer":false,"orderType":"HOUSING_RENT"},{"orderType":"HOUSING_RENT","caseSubTypeId":18,"caseTypeId":17,"id":9272622,"createdAt":1675851318822,"updatedAt":1675936829364,"orderId":"63549272622","userId":2451544,"transactionId":"fb6900d9-2879-44ce-bbd5-00ca4037bc98","status":"PAYOUT_SUCCESSFUL","utr":"304026058061","platform":"dweb","deepDiscountFlag":false,"actions":[{"currentStatusId":103,"nextStatusId":104,"reasonId":266,"performedTime":1675851319444,"agentId":1},{"currentStatusId":104,"nextStatusId":96,"reasonId":251,"performedTime":1675851351000,"agentId":1},{"currentStatusId":96,"nextStatusId":105,"reasonId":267,"performedTime":1675936808000,"agentId":1},{"currentStatusId":105,"nextStatusId":106,"reasonId":268,"performedTime":1675936816000,"agentId":1}],"cyberInsurance":false,"amount":100,"conveniencefees":2,"totalAmount":102,"rentMonth":1,"paymentDate":1675728000000,"landLordbankAccounts":{"id":0,"accountNumber":"50200001439322","ifscCode":"HDFC0000239","active":null,"createdAt":null,"upi":null},"tenantName":"Test","tenantEmail":"test@housing.com","tenantContactNumber":"9019019017","landlordName":"Pawan","paymentModeId":2,"userDto":{"profileUuid":"5de461e1-3029-4c54-aea3-10a960d80a7f","fullName":null,"email":"test@housing.com","optWhatsapp":null,"dob":null,"address":null},"rentTypeId":5,"gaId":"GA1.2.630922540.1669717600","referralDiscount":0,"coinDiscount":0,"coinCount":0,"subscriptionDiscount":0,"subscriptionDiscountAmount":0,"manualPennyDropRequired":false,"paymentResponse":{"gatewayPaymentId":"pay_LDuhcBNrytmhxU","paymentCardDto":{"last4":"7120","network":"MasterCard","type":"credit","issuer":"STCB"},"paymentGateway":"Razorpay"},"payoutResponse":{"gatewayPaymentId":"pout_LEIyZpnUzvFpXz","utr":"304026058061","bankName":"HDFC Bank","manualPennyDropRequired":false,"statusReason":"payout_processed","statusDescription":"Payout is processed and the money has been credited into the beneficiaries account.","autoRetryStage":false,"manualPennyDropStage":false,"userAccountCreationStatus":false},"ipAddress":"10.0.12.220","fraud":false,"spinScore":0.0,"housingCoinOffer":true,"shouldAllocateCoin":true,"scratchCard":true,"rentProtect":false,"payoutCreationTime":1675934118826,"subscription":false,"payoutUserType":"NEW_USER","walletAmount":0,"delayPayout":true,"jackpotExperimentUser":false,"autoRetryStage":false,"manualPennyDropStage":false,"selfTransfer":false,"orderType":"HOUSING_RENT"}],"pac":true,"cvrScore":"0.03125","includeCyberWithConvenienceFee":false,"pocFeeIncreaseExperiment":false,"pocFeeIncreaseExperimentVariant":null}</span>
+&nbsp;
+/* 
+https://rentpay.housing.com//apollo/data/v2/entity/order/selector?orderSelectorsArray=%7B%22filters%22%3A%7B%22and%22%3A%5B%7B%22equal%22%3A%7B%22orderType%22%3A%22HOUSING_RENT%22%7D%7D%2C%7B%22equal%22%3A%7B%22id%22%3A%2264826049%22%7D%7D%5D%7D%7D&amp;api_name=EDGE_ORDER_DETAILS&amp;source=mobile  */
+const orderSelectorData = <span class="cstat-no" title="statement not covered" >[{"order":{"caseSubTypeId":18,"caseTypeId":17,"id":64826049,"createdAt":1709531554057,"updatedAt":1709531592561,"orderId":"339464826049","userId":4555576,"transactionId":"428bae8a-2672-4779-aa78-058cb32b596b","status":"PAYOUT_SUCCESSFUL","utr":"406411895999","invoiceUrl":"http://hsng.co/5xHmGLFJ23X1","paymentReceiptUrl":"http://hsng.co/NqPk77i8kAoT","platform":"Android","deepDiscountFlag":false,"actions":[{"currentStatusId":103,"nextStatusId":104,"reasonId":266,"performedTime":1709531554294,"agentId":1},{"currentStatusId":104,"nextStatusId":96,"reasonId":251,"performedTime":1709531579000,"agentId":1},{"currentStatusId":96,"nextStatusId":105,"reasonId":267,"performedTime":1709531583000,"agentId":1},{"currentStatusId":105,"nextStatusId":106,"reasonId":268,"performedTime":1709531592000,"agentId":1}],"cyberInsurance":false,"amount":100,"conveniencefees":3,"totalAmount":103,"rentMonth":2,"paymentDate":1709531552743,"landLordbankAccounts":{"id":0,"accountNumber":"31870100008818","ifscCode":"BARB0LDALUC","active":null,"createdAt":null,"upi":null},"tenantName":"test","tenantEmail":"test@housing.com","tenantContactNumber":"9019019017","landlordName":"Parjanya","cityId":"f97f947ffae6408ac295","paymentModeId":2,"userDto":{"profileUuid":"518daa4b-36a7-4a87-931f-81dddd2148a6","fullName":"test","email":"test@housing.com","optWhatsapp":true,"dob":null,"address":null},"rentTypeId":5,"gaId":"58edfbc755f2974a","referralDiscount":0,"coinDiscount":0,"coinCount":0,"subscriptionDiscount":0,"subscriptionDiscountAmount":0,"manualPennyDropRequired":false,"paymentResponse":{"gatewayPaymentId":"pay_NiAZ2LFyFyUVKr","paymentCardDto":{"last4":"0802","network":"RuPay","type":"credit","issuer":"IDFB"},"paymentGateway":"payu"},"payoutResponse":{"gatewayPaymentId":"pout_NiAZQHcGqFSxtW","utr":"406411895999","bankName":"Bank of Baroda","manualPennyDropRequired":false,"autoRetryStage":false,"manualPennyDropStage":false,"userAccountCreationStatus":false},"ipAddress":"49.36.177.229","fraud":false,"sourceVersion":"14.0.10.457","spinScore":0.0,"spinDiscount":0,"housingCoinOffer":false,"shouldAllocateCoin":true,"scratchCard":true,"rentProtect":false,"payoutCreationTime":1709531520500,"subscription":false,"payoutUserType":"REDMARKED_USER","walletAmount":0,"delayPayout":false,"jackpotExperimentUser":true,"transientDiscountAmount":0,"flashDiscountAmount":0,"educationFeesDiscountAmount":0,"nextMonthDiscount":0,"autoRetryStage":false,"manualPennyDropStage":false,"manualPennyDrop":{"userAccountCreationStatus":false,"currentStatusDate":null},"selfTransfer":false,"orderType":"HOUSING_RENT"},"totalAmount":103,"orderStatus":[{"stateId":1,"date":1709531554057,"statusId":2},{"stateId":2,"date":1709531579000,"statusId":2},{"stateId":3,"date":1709531583000,"statusId":2},{"stateId":4,"date":1709531592000,"statusId":2}],"rentType":"Maintenance","extraData":null}]</span>
+&nbsp;
+const walletAmount = <span class="cstat-no" title="statement not covered" >3</span>
+&nbsp;
+/* https://rentpay.housing.com//apollo/data/v2/entity/order/selector?orderSelectorsArray=%7B%22filters%22%3A%7B%22and%22%3A%5B%7B%22equal%22%3A%7B%22orderType%22%3A%22HOUSING_RENT%22%7D%7D%2C%7B%22equal%22%3A%7B%22id%22%3A%2264826049%22%7D%7D%5D%7D%7D&amp;api_name=EDGE_ORDER_DETAILS&amp;source=mobile */
+const orderSelector = <span class="cstat-no" title="statement not covered" >[{"order":{"caseSubTypeId":18,"caseTypeId":17,"id":64826049,"createdAt":1709531554057,"updatedAt":1709531592561,"orderId":"339464826049","userId":4555576,"transactionId":"428bae8a-2672-4779-aa78-058cb32b596b","status":"PAYOUT_SUCCESSFUL","utr":"406411895999","invoiceUrl":"http://hsng.co/5xHmGLFJ23X1","paymentReceiptUrl":"http://hsng.co/NqPk77i8kAoT","platform":"Android","deepDiscountFlag":false,"actions":[{"currentStatusId":103,"nextStatusId":104,"reasonId":266,"performedTime":1709531554294,"agentId":1},{"currentStatusId":104,"nextStatusId":96,"reasonId":251,"performedTime":1709531579000,"agentId":1},{"currentStatusId":96,"nextStatusId":105,"reasonId":267,"performedTime":1709531583000,"agentId":1},{"currentStatusId":105,"nextStatusId":106,"reasonId":268,"performedTime":1709531592000,"agentId":1}],"cyberInsurance":false,"amount":100,"conveniencefees":3,"totalAmount":103,"rentMonth":2,"paymentDate":1709531552743,"landLordbankAccounts":{"id":0,"accountNumber":"31870100008818","ifscCode":"BARB0LDALUC","active":null,"createdAt":null,"upi":null},"tenantName":"test","tenantEmail":"test@housing.com","tenantContactNumber":"9019019017","landlordName":"Parjanya","cityId":"f97f947ffae6408ac295","paymentModeId":2,"userDto":{"profileUuid":"518daa4b-36a7-4a87-931f-81dddd2148a6","fullName":"test","email":"test@housing.com","optWhatsapp":true,"dob":null,"address":null},"rentTypeId":5,"gaId":"58edfbc755f2974a","referralDiscount":0,"coinDiscount":0,"coinCount":0,"subscriptionDiscount":0,"subscriptionDiscountAmount":0,"manualPennyDropRequired":false,"paymentResponse":{"gatewayPaymentId":"pay_NiAZ2LFyFyUVKr","paymentCardDto":{"last4":"0802","network":"RuPay","type":"credit","issuer":"IDFB"},"paymentGateway":"payu"},"payoutResponse":{"gatewayPaymentId":"pout_NiAZQHcGqFSxtW","utr":"406411895999","bankName":"Bank of Baroda","manualPennyDropRequired":false,"autoRetryStage":false,"manualPennyDropStage":false,"userAccountCreationStatus":false},"ipAddress":"49.36.177.229","fraud":false,"sourceVersion":"14.0.10.457","spinScore":0.0,"spinDiscount":0,"housingCoinOffer":false,"shouldAllocateCoin":true,"scratchCard":true,"rentProtect":false,"payoutCreationTime":1709531520500,"subscription":false,"payoutUserType":"REDMARKED_USER","walletAmount":0,"delayPayout":false,"jackpotExperimentUser":true,"transientDiscountAmount":0,"flashDiscountAmount":0,"educationFeesDiscountAmount":0,"nextMonthDiscount":0,"autoRetryStage":false,"manualPennyDropStage":false,"manualPennyDrop":{"userAccountCreationStatus":false,"currentStatusDate":null},"selfTransfer":false,"orderType":"HOUSING_RENT"},"totalAmount":103,"orderStatus":[{"stateId":1,"date":1709531554057,"statusId":2},{"stateId":2,"date":1709531579000,"statusId":2},{"stateId":3,"date":1709531583000,"statusId":2},{"stateId":4,"date":1709531592000,"statusId":2}],"rentType":"Maintenance","extraData":null}]</span>
+&nbsp;
+const pspApiResponse = <span class="cstat-no" title="statement not covered" >{</span>
+  savedTokenData,
+  iinsData,
+  convChargeData,
+  kycData,
+  consumeAndInitiateData,
+  coinConversion,
+  userProfile,
+  paymentCallBack,
+  estimatedTime,
+  pspTilesData,
+  optWhatsapp,
+  offerCataloguePsp,
+  scratchCard,
+  cashbackOfferValidate,
+  userProfilePsp,
+  orderSelectorData,
+&nbsp;
+}
+&nbsp;
+export default pspApiResponse</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2024-03-18T13:40:49.340Z
+            </div>
+        <script src="../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../sorter.js"></script>
+        <script src="../../../block-navigation.js"></script>
+    </body>
+</html>
+    
